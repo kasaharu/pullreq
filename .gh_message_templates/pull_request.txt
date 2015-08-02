@@ -1,0 +1,14 @@
+[ticket-no][WIP][Task/Bug]
+
+## 対象チケット
+https://github.com/kasaharu/hogehoge/ticket-no
+
+## 対応内容
+
+
+### PR ステータス
+ - [ ] 実装完了
+ - [ ] レビュー
+ - [ ] レビュー指摘対応
+ - [ ] 完了
+
