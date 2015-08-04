@@ -9,12 +9,21 @@
 
 # 使い方
 
-## テンプレートファイルの配置
+## 設定
 
-#### コマンド
+#### config ファイルの確認
+
+* Pull Request 発行時に使用する base と compare のユーザ名と base の branch 名を設定を確認する
+    * `$ pullreq setting`
+        * `1`
+    * 設定を変更する場合は [setting/config.yml](https://github.com/kasaharu/pullreq/blob/master/setting/config.yml) を修正する
+
+
+#### テンプレートファイルの配置
 
 * Pull Request 発行時のテンプレートを設定する
-    * `$ pullreq set`
+    * `$ pullreq setting`
+        * `2`
 
 ## Pull Request の発行
 
