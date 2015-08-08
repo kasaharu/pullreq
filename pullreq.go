@@ -12,8 +12,6 @@ import (
 )
 
 func main() {
-    flag.Parse()
-
     config := parse_setting_file()
     option := check_args(flag.Args())
 
@@ -21,6 +19,14 @@ func main() {
 }
 
 func check_args(args []string) int {
+    var v = flag.Bool("v", false, "version check")
+    flag.Parse()
+
+    if *v == true {
+        fmt.Println(" pullreq - version 0.5.0")
+        os.Exit(0)
+    }
+
     // 引数があるかどうか？
     if len(flag.Args()) <= 0 {
         fmt.Printf("invalid args \n")
